@@ -10,7 +10,7 @@ prototype/test programs fifomain.c, fifor.c, and fifow.c
 Principle:
 Implement a multiple-reader - multiple-writer fifo queue in file system storage.
 
-One or more user writer-programs wants to send messages sequentially to a buffering queue.
+One or more user writer-programs want to send messages sequentially to a buffering queue.
 The system maintains a single write-pointer for each queue.
 The messages may be any human-readable or binary data.
 The messages are not messed up in the buffering device.
