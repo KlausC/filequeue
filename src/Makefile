@@ -60,11 +60,11 @@ OBJS=	$(LOBJS)
 
 BINS= ${BINUTI}	
 
-SCRIPTS= ${SCRUTI} test
-TESTSCRIPTS= test
+SCRIPTS= ${SCRUTI}
+TESTSCRIPTS=
 
 ############################################################################### 
-install:	instbin instscripts 
+install:	instbin # instscripts 
 
 recompile:
 		rm -f $(OBJS) $(BINS)
