@@ -27,7 +27,7 @@ fifomain.c is a general testing program.
 fifor.c and fifow.c are early proff-of-concept versions. See docu in fifow.c.
 
 Usage:
-
+```
 #include	"fifo.h"
 /**
  * Create (if no directory with given name exists) a new file queu structure.
@@ -99,3 +99,4 @@ void fifoCloseR( FifoDescriptor* fp );
 void fifoCloseW( FifoDescriptor* fp );
 
 /*************** END OF PUBLIC INTERFACE *************************************/
+```
