@@ -3,9 +3,9 @@ filequeue
 
 C-library to store and retrieve data items sequentially
 
-The project provides source files fifop.c and fifo.c, which define
+The project provides source files `fifop.c` and`fifo.c`, which define
 the library functions and
-prototype/test programs fifomain.c, fifor.c, and fifow.c
+prototype/test programs `fifomain.c`, `fifor.c`, and `fifow.c`
 
 Principle:
 Implement a multiple-reader - multiple-writer fifo queue in file system storage.
@@ -20,11 +20,11 @@ Each message is retrievable once for each read-pointer.
 Once a message is processed, it has to be released for that read-pointer.
 No messages are actually removed from storage.
 
-The program version fifo.c uses file locks, whereas fifop.c uses phthread locks.
-The public interfaces in fifo.h and fifop.h does not differ.
+The program version `fifo.c` uses file locks, whereas `fifop.c` uses `phthread` locks.
+The public interfaces in `fifo.h` and `fifop.h` don't differ.
 
-fifomain.c is a general testing program.
-fifor.c and fifow.c are early proff-of-concept versions. See docu in fifow.c.
+`fifomain.c`is a general testing program.
+`fifor.c` and `fifow.c` are early proof-of-concept versions. See docu in `fifow.c`.
 
 Usage:
 ```
